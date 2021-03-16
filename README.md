@@ -1,2 +1,2 @@
-# responsive-landing-page
+# Responsive Landing Page
 Responsive landing page for desktop and mobile screen
