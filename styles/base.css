@@ -8,6 +8,7 @@
     --header-color: #F4F6F9;
     --font-color: #4F4F4F;
     --title-font-color: #333333;
+    --section-title: #00ADEE;
 }
 
 * {
@@ -28,11 +29,23 @@ h1 {
     color: var(--font-color);
 }
 
+h2 {
+    font-size: 28px;
+    line-height: 37px;
+    font-weight: bold;
+    color: var(--title-font-color);
+}
+
 p {
     font-size: 16px;
     line-height: 23px;
     text-align: center;
     color: var(--title-font-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--section-title);
 }
 
 .flex {
@@ -47,10 +60,18 @@ p {
     flex-direction: column;
 }
 
+.align-center {
+    align-items: center;
+}
+
 @media screen and (min-width: 600px) {
     h1 {
         font-size: 36px;
         line-height: 48px;
+    }
+    h2 {
+        font-size: 28px;
+        line-height: 37px;
     }
     p {
         font-size: 18px;
