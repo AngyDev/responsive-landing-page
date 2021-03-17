@@ -14,10 +14,6 @@
     box-sizing: border-box;
 }
 
-header {
-    background-color: var(--header-color);
-}
-
 body {
     margin: auto;
     font-family: Lato, sans-serif;
@@ -27,7 +23,6 @@ body {
 h1 {
     font-size: 30px;
     line-height: 40px;
-    text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 30px;
     color: var(--font-color);
@@ -40,7 +35,19 @@ p {
     color: var(--title-font-color);
 }
 
-@media screen and (min-width: 768px) {
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
     h1 {
         font-size: 36px;
         line-height: 48px;
@@ -48,5 +55,12 @@ p {
     p {
         font-size: 18px;
         line-height: 26px;
+        text-align: left;
+    }
+    .col-md {
+        width: 40%;
+    }
+    .col-app {
+        width: 25%;
     }
 }

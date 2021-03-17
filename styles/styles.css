@@ -1,4 +1,52 @@
 .container {
+    min-width: 360px;
     max-width: 1440px;
     margin: 0 auto 0 auto;
+}
+
+.text-container {
+    margin: 0 20px 0 20px;
+}
+
+.text-style {
+    text-align: center;
+}
+
+.sports-logo {
+    align-self: center;
+    margin: 32px 0 86px 0;
+}
+
+.img-bg {
+    background-color: #F4F6F9;
+}
+
+.app-btn {
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 59px;
+}
+
+@media screen and (min-width: 600px) {
+    .text-container {
+        margin-left: 163px;
+    }
+    .sports-logo {
+        align-self: flex-start;
+    }
+    .text-style {
+        text-align: left;
+    }
+    .img-bg {
+        background: url(../img/phones.svg);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+    .app-btn {
+        margin-bottom: 164px;
+    }
+    .app-btn>img {
+        padding-right: 30px;
+    }
 }
