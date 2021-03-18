@@ -27,25 +27,27 @@
     margin-bottom: 59px;
 }
 
-.section-container {
-    margin-top: 54px;
-}
-
 .section-title {
     font-size: 16px;
     line-height: 21px;
     font-weight: bold;
     color: var(--section-title);
+    margin-top: 54px;
 }
 
 .img-bg-what {
     background: url(../img/cristiano-ronaldo.svg);
     background-repeat: no-repeat;
     background-position: 50%;
+    width: 100%;
 }
 
 .img-grad {
     background: linear-gradient(180deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5);
+}
+
+.match {
+    margin: 0 20px 0 20px;
 }
 
 .match-panel {
@@ -54,6 +56,8 @@
     background: var(--color-base);
     box-shadow: -15.1278px 16.3884px 33.6173px rgba(0, 0, 0, 0.5);
     border-radius: 2.74531px;
+    margin-top: 70px;
+    z-index: 1;
 }
 
 .match-info {
@@ -78,6 +82,11 @@
     justify-content: flex-end;
 }
 
+.logo>img:nth-child(2) {
+    position: relative;
+    right: 10px;
+}
+
 .match-notification {
     height: 25%;
     background-color: #EEEEEE;
@@ -89,10 +98,12 @@
     padding: 0 10px 0 10px;
 }
 
-.img1 {
-    margin-top: 10px;
+.img-match {
     height: 150px;
     width: 250px;
+    margin-bottom: 40px;
+    align-self: flex-end;
+    margin-top: -20px;
 }
 
 @media screen and (min-width: 600px) {
@@ -105,6 +116,9 @@
     .text-style {
         text-align: left;
     }
+    .section-container {
+        height: 592px;
+    }
     .img-bg {
         background: url(../img/phones.svg);
         background-repeat: no-repeat;
@@ -115,5 +129,19 @@
     }
     .app-btn>img {
         padding-right: 30px;
+    }
+    .section-title {
+        margin-top: 133px;
+    }
+    .match {
+        margin-left: 163px;
+    }
+    .img-bg-what {
+        order: -1;
+        width: 50%;
+    }
+    .img-grad {
+        background: linear-gradient(270deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5);
+        height: 100%;
     }
 }

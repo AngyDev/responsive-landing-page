@@ -64,6 +64,10 @@ a {
     align-items: center;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 @media screen and (min-width: 600px) {
     h1 {
         font-size: 36px;
@@ -83,5 +87,8 @@ a {
     }
     .col-app {
         width: 25%;
+    }
+    .flex-wrap {
+        flex-wrap: nowrap;
     }
 }
