@@ -1,0 +1,16 @@
+.section__title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: var(--section-title);
+}
+
+@media screen and (min-width: 600px) {
+    .section__title {
+        text-align: left;
+    }
+    .section_pad-left {
+        padding-left: 10%;
+    }
+}

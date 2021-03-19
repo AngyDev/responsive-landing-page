@@ -1,0 +1,72 @@
+.match__bg {
+    background: url(../img/cristiano-ronaldo.svg);
+    background-repeat: no-repeat;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.match__img {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*.match__info {
+    max-width: 320px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    height: 278px;
+
+
+}
+.match__img {
+    position: absolute;
+}
+.img1 {
+    position: absolute;
+}
+.img2 {
+    width: 100%;
+    display: block;
+    margin-top: 50px;
+    margin-left: 50px;
+    position: absolute;
+}
+
+/*.img1 {
+    z-index: 1;
+}
+
+.img2 {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}*/
+
+.match {
+    padding: 0 20px 0 20px;
+}
+
+.match_spacing-sm {
+    padding-top: 54px;
+}
+
+@media screen and (min-width: 600px) {
+    .match__bg {
+        order: -1;
+    }
+    .match__img {
+        padding-right: 20px;
+        width: 100%;
+        max-width: 466px;
+    }
+    .match__text {
+        padding-left: 10%;
+    }
+    .match_spacing-lg {
+        padding-top: 133px;
+    }
+}

@@ -1,0 +1,21 @@
+.started {
+    padding: 62px 20px 0 20px;
+}
+
+.started__img-mobile {
+    background-image: url(../img/phone.svg);
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 600px) {
+    .started {
+        padding: 217px 0 170px 12.5%;
+    }
+    .started__bg {
+        background: url(../img/phone-large.svg);
+        background-repeat: no-repeat;
+    }
+    .started__mobile {
+        display: none;
+    }
+}
