@@ -1,0 +1,39 @@
+.header__bg {
+    background-color: var(--header-color);
+}
+
+.header {
+    padding: 0 20px 0 20px;
+}
+
+.header__logo {
+    padding: 32px 0 86px 0;
+}
+
+.header__button {
+    padding-top: 50px;
+    width: 100%;
+    gap: 1em;
+}
+
+.header__img {
+    width: 100%;
+    max-width: 156px;
+    height: auto;
+}
+
+@media screen and (min-width: 600px) {
+    .header__bg {
+        background: url(../img/header-bg.svg);
+        background-color: var(--header-color);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+    .header {
+        align-items: unset;
+        padding-left: 12.5%;
+    }
+    .header__button {
+        justify-content: unset;
+    }
+}
