@@ -11,72 +11,70 @@
     <title>Sports - Get a personalized football experience tailored just for you</title>
 </head>
 
-<body>
-    <header class="container flex flex-row img-bg" style="background-color: #F4F6F9;">
-        <div class="text-container flex flex-col col-md">
-            <img class="flex sports-logo" src="img/sports-logo.svg" alt="Sports Logo">
-            <div class="text-style">
+<body class="container">
+
+    <header class="header__bg">
+        <div class="header flex flex-col align-center col">
+            <div class="header__logo">
+                <img src="img/sports-logo.svg" alt="Sports Logo">
+            </div>
+            <div>
                 <h1>Get a personalized football experience tailored just for you</h1>
                 <p>Achieve super-fan status by getting tailored updates and up-to-the-minute information on your team.
                 </p>
             </div>
-            <div class="flex flex-row align-center app-btn col-app">
-                <img src="img/apple-store.svg" alt="Apple Store">
-                <img src="img/google-play.svg" alt="Google Play">
+            <div class="header__button flex flex-row justify-center">
+                <img class="header__img" src="img/apple-store.svg" alt="Apple Store">
+                <img class="header__img" src="img/google-play.svg" alt="Google Play">
             </div>
+            <hr class="spacing-lg spacing-sm">
+        </div>
     </header>
+
     <main>
 
-        <section class="container section-container flex flex-row flex-wrap">
-            <div class="text-container flex flex-col text-style col-md">
-                <div class="section-title">
+        <section class="flex flex-row flex-wrap">
+            <div class="match col">
+                <hr class="match_spacing-lg match_spacing-sm">
+                <div class="section__title section_pad-left">
                     WHAT IT DOES
                 </div>
-                <h2>An Enhanced Football Experience</h2>
-                <p>The Guardian Live Scores app is your go to app for live scores and watching Premier League goals… Get in there, what a result!</p>
-                <p>As well as videos of all the goals, you can watch match highlights, check out the latest scores and results and stay bang-up-to-date with the big football stories from The Guardian publication.</p>
-                <p><a href="#" target="_blank">Learn more</a></p>
-            </div>
-            <div class="img-bg-what">
-                <div class="img-grad">
-                    <div class="match flex flex-col">
-                        <div class="match-panel">
-                            <div class="match-info flex">
-                                <div class="info flex flex-col match-text">
-                                    <span style="color: #4F4F4F;">Sat, 12:35pm</span>
-                                    <span style="font-weight: bold;">Arsenal v <br>Chelsea</span>
-                                    <span>Friendly Match</span>
-                                </div>
-                                <div class="logo flex align-center">
-                                    <img src="img/arsenal-f-c-seeklogo.com.svg" alt="Arsenal Logo">
-                                    <img src="img/chelsea-fc.svg" alt="Chelsea Logo">
-                                </div>
-                            </div>
-                            <div class="match-notification flex flex-row match-text align-center pad">
-                                <span>Turn on all match notifications</span>
-                                <img src="img/toogle.svg" alt="Toggle">
-                            </div>
-                        </div>
-                        <img class="img-match" src="img/img-match.svg" alt="">
-                    </div>
+                <div class="match__text">
+                    <h2>User-friendly Interface</h2>
+                    <p>The in-game goal clips from every Premier League match are available to Guardian TV customers with a Guardian subscription.</p>
+                    <p>So, if you’re not a subscriber, now’s the time to make that savvy call. If that’s a step too far for you, you can still watch loads of firecracker Premier League action as long as you sign in with a free Guardian iD.</p>
+                    <p><a href="#" target="_blank">Learn more</a></p>
                 </div>
+                <hr class="match_spacing-sm">
+            </div>
+            <div class="match__bg flex col">
+                <!--<div class="match__info ">
+                    <img class="match__img img1" src="img/match-info.svg" alt="Match Info">
+                    <img class="match__img img2" src="img/img-match.svg" alt="Match img">
+                </div>-->
+                <img class="match__img" src="img/match-group.svg" alt="Match info">
             </div>
         </section>
 
-        <section class="container img-bg-started">
-            <div class="text-container flex flex-col text-style col-md pad-bt">
-                <div class="section-title">
+        <section class="flex flex-row flex-wrap started__bg">
+            <div class="started col">
+                <div class="section__title">
                     GET STARTED
                 </div>
-                <h2>User-friendly Interface</h2>
-                <p>The in-game goal clips from every Premier League match are available to Guardian TV customers with a Guardian subscription.</p>
-                <p>So, if you’re not a subscriber, now’s the time to make that savvy call. If that’s a step too far for you, you can still watch loads of firecracker Premier League action as long as you sign in with a free Guardian iD.</p>
-                <p><a href="#" target="_blank">Learn more</a></p>
+                <div>
+                    <h2>User-friendly Interface</h2>
+                    <p>The in-game goal clips from every Premier League match are available to Guardian TV customers with a Guardian subscription.</p>
+                    <p>So, if you’re not a subscriber, now’s the time to make that savvy call. If that’s a step too far for you, you can still watch loads of firecracker Premier League action as long as you sign in with a free Guardian iD.</p>
+                    <p><a href="#" target="_blank">Learn more</a></p>
+                </div>
             </div>
-            <div class="img-container img-mbl-started"></div>
+            <div class="started__mobile">
+                <img src="img/phone.svg" alt="Phone">
+            </div>
         </section>
 
     </main>
+
 </body>
 
 </html>
