@@ -1,0 +1,19 @@
+<svg width="1440" height="716" viewBox="0 0 1440 716" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1440" height="716">
+<rect width="1440" height="716" transform="matrix(-1 0 0 1 1440 0)" fill="white"/>
+</mask>
+<g mask="url(#mask0)">
+<rect width="1440" height="716" transform="matrix(-1 0 0 1 1440 0)" fill="white"/>
+<g opacity="0.15">
+<circle r="399.5" transform="matrix(-1 0 0 1 1035 354)" stroke="#00ADEE"/>
+<circle opacity="0.65" r="499.5" transform="matrix(-1 0 0 1 1035 354)" stroke="#00ADEE"/>
+<circle opacity="0.55" r="599.5" transform="matrix(-1 0 0 1 1035 354)" stroke="#00ADEE"/>
+<circle opacity="0.45" r="699.5" transform="matrix(-1 0 0 1 1035 354)" stroke="#00ADEE"/>
+<circle opacity="0.35" r="799.5" transform="matrix(-1 0 0 1 1035 354)" stroke="#00ADEE"/>
+<circle opacity="0.25" r="899.5" transform="matrix(-1 0 0 1 1035 354)" stroke="#00ADEE"/>
+<circle opacity="0.15" r="999.5" transform="matrix(-1 0 0 1 1035 354)" stroke="#00ADEE"/>
+</g>
+<circle r="200.5" transform="matrix(-1 0 0 1 1035 354)" stroke="#00ADEE" stroke-dasharray="8 8"/>
+<circle r="300.5" transform="matrix(-1 0 0 1 1035 354)" stroke="#00ADEE" stroke-dasharray="8 8"/>
+</g>
+</svg>
