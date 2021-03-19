@@ -9,6 +9,7 @@
     --font-color: #4F4F4F;
     --title-font-color: #333333;
     --section-title: #00ADEE;
+    --feature-color: #FAFAFA;
 }
 
 * {
@@ -16,16 +17,23 @@
 }
 
 body {
-    margin: auto;
     font-family: Lato, sans-serif;
     background-color: var(--color-base);
+}
+
+.container {
+    min-width: 360px;
+    max-width: 1440px;
+    margin: 0 auto 0 auto;
 }
 
 h1 {
     font-size: 30px;
     line-height: 40px;
     letter-spacing: 0.03em;
+    margin-top: 0;
     margin-bottom: 30px;
+    text-align: center;
     color: var(--font-color);
 }
 
@@ -33,6 +41,7 @@ h2 {
     font-size: 28px;
     line-height: 37px;
     font-weight: bold;
+    text-align: center;
     color: var(--title-font-color);
 }
 
@@ -48,32 +57,19 @@ a {
     color: var(--section-title);
 }
 
-.flex {
-    display: flex;
-}
-
-.flex-row {
-    flex-direction: row;
-}
-
-.flex-col {
-    flex-direction: column;
-}
-
-.align-center {
-    align-items: center;
-}
-
-.flex-wrap {
-    flex-wrap: wrap;
+hr {
+    margin: 0;
+    border: 0;
 }
 
 @media screen and (min-width: 600px) {
     h1 {
         font-size: 36px;
         line-height: 48px;
+        text-align: left;
     }
     h2 {
+        text-align: left;
         font-size: 28px;
         line-height: 37px;
     }
@@ -81,14 +77,5 @@ a {
         font-size: 18px;
         line-height: 26px;
         text-align: left;
-    }
-    .col-md {
-        width: 40%;
-    }
-    .col-app {
-        width: 25%;
-    }
-    .flex-wrap {
-        flex-wrap: nowrap;
     }
 }
