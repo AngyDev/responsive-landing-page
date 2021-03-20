@@ -69,4 +69,7 @@
     .match_spacing-lg {
         padding-top: 133px;
     }
+    .match {
+        padding-right: 12.5%;
+    }
 }

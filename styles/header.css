@@ -25,13 +25,16 @@
 @media screen and (min-width: 600px) {
     .header__bg {
         background: url(../img/header-bg.svg);
-        background-color: var(--header-color);
         background-repeat: no-repeat;
         background-position: right top;
+        background-size: cover;
     }
     .header {
         align-items: unset;
-        padding-left: 12.5%;
+        padding-left: 10%;
+    }
+    .header__logo {
+        padding-bottom: 133px;
     }
     .header__button {
         justify-content: unset;

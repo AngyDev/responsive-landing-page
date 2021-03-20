@@ -9,11 +9,12 @@
 
 @media screen and (min-width: 600px) {
     .started {
-        padding: 217px 0 170px 12.5%;
+        padding: 217px 0 170px 10%;
     }
     .started__bg {
         background: url(../img/phone-large.svg);
         background-repeat: no-repeat;
+        background-size: cover;
     }
     .started__mobile {
         display: none;
