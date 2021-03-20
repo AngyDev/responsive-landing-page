@@ -1,0 +1,114 @@
+.features {
+    padding: 0 20px 0 20px;
+}
+
+.features__bg {
+    background-color: var(--feature-color);
+}
+
+.features__title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 37px;
+    text-align: center;
+    color: var(--title-font-color);
+    padding-top: 42px;
+}
+
+
+/* .features__list { 
+    padding: 52px 0 11px 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#video {
+    background: url(../img/baseline-ondemand_video-24px.svg) no-repeat 0 10px;
+    padding-left: 30px;
+}*/
+
+.features__list-box {
+    padding: 52px 0 11px 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.features__span {
+    padding-bottom: 40px;
+}
+
+.features__span::before {
+    content: '';
+    display: block;
+    text-align: center;
+    filter: invert(50%) sepia(71%) saturate(1914%) hue-rotate(162deg) brightness(97%) contrast(101%);
+}
+
+#video-on-demand::before {
+    content: url(../img/baseline-ondemand_video-24px_white.svg);
+}
+
+#notification::before {
+    content: url(../img/baseline-notifications_active-24px.svg);
+}
+
+#hd::before {
+    content: url(../img/baseline-hd-24px.svg);
+}
+
+#flag::before {
+    content: url(../img/baseline-flag-24px.svg);
+}
+
+#style::before {
+    content: url(../img/baseline-style-24px.svg);
+}
+
+#poll::before {
+    content: url(../img/baseline-poll-24px.svg);
+}
+
+#add-to-home::before {
+    content: url(../img/baseline-add_to_home_screen-24px.svg);
+}
+
+#people::before {
+    content: url(../img/baseline-people-24px.svg);
+}
+
+#tune::before {
+    content: url(../img/baseline-tune-24px.svg);
+}
+
+@media screen and (min-width: 600px) {
+    .features__bg {
+        background: url(../img/features-bg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .features {
+        flex-direction: column;
+    }
+    .features__title {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 37px;
+        color: var(--color-base);
+    }
+    .features__list-box {
+        flex-wrap: wrap;
+        padding-left: 10%;
+        padding-right: 10%;
+        justify-content: unset;
+    }
+    .features__span {
+        width: 33.3%;
+    }
+    .features__span>p {
+        color: var(--color-base);
+    }
+    .features__span::before {
+        text-align: unset;
+        filter: unset;
+    }
+}
