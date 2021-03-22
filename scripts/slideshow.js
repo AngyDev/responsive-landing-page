@@ -10,6 +10,10 @@ const usersComments = [{
     image: "./img/slider-profile-img3.svg",
     name: "Noah Jackson",
     comment: "I use this app every day and it's a great way to keep up to date with what's going on in football. It's a shame it won't rotate into landscape mode like its main competitor"
+}, {
+    image: "./img/slider-profile-img4.svg",
+    name: "Sarah Udoma",
+    comment: "This app has videos for other premier league teams who play and it also gives me nofications when my favourite team plays"
 }];
 
 class Slideshow {
