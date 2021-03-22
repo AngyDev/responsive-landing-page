@@ -1,0 +1,23 @@
+.apps-logo__bg {
+    background-color: var(--feature-color);
+    padding: 0 20px 0 20px;
+}
+
+.apps-logo__title {
+    padding-top: 37px;
+}
+
+.apps-logo__logos {
+    row-gap: 2em;
+    column-gap: 2em;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
+@media screen and (min-width: 600px) {
+    .apps-logo__logos {
+        flex-wrap: wrap;
+    }
+}
