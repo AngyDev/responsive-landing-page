@@ -6,11 +6,18 @@
     color: var(--section-title);
 }
 
+.section-mbl-container {
+    padding: 0 20px 0 20px;
+}
+
 @media screen and (min-width: 600px) {
     .section__title {
         text-align: left;
     }
     .section_pad-left {
         padding-left: 10%;
+    }
+    .section-mbl-container {
+        padding: 0;
     }
 }
