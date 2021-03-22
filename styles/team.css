@@ -1,0 +1,17 @@
+.team__img {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    .team__img {
+        display: unset;
+        background: url(../img/team-bg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .team__text {
+        padding: 105px 10% 98px 5%;
+        text-align: left;
+        align-items: unset;
+    }
+}
