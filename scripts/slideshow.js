@@ -109,6 +109,10 @@ class Slideshow {
         dots[this.slideIndex - 1].className += " active";
     }
 
+    /**
+     * Change the slide with prev or next button
+     * @param {Number} n 
+     */
     plusSlides(n) {
         console.log("plus");
         console.log(this.slideIndex);
