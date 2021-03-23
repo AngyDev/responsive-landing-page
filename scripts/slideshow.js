@@ -66,6 +66,7 @@ class Slideshow {
             var dot = document.createElement("button");
             dot.setAttribute("name", "dot");
             dot.setAttribute("class", "dot");
+            dot.setAttribute("aria-label", "Dot Button");
             dot.setAttribute("id", index + 1);
 
             document.getElementById("dot-container").appendChild(dot);
