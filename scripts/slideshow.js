@@ -45,6 +45,7 @@ class Slideshow {
 
             var twitter = document.createElement("img");
             twitter.setAttribute("src", "img/twitter.svg");
+            twitter.setAttribute("alt", "Twitter");
             slideUser.appendChild(twitter);
 
             var slideUserComment = document.createElement("div");
