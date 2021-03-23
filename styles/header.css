@@ -28,6 +28,7 @@
         background-repeat: no-repeat;
         background-position: right top;
         background-size: cover;
+        background-color: var(--header-color);
     }
     .header {
         align-items: unset;
