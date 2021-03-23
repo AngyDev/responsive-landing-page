@@ -10,7 +10,7 @@
     padding-bottom: 46px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 601px) {
     .team__img {
         order: -1;
         height: unset;

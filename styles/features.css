@@ -80,7 +80,7 @@
     content: url(../img/baseline-tune-24px.svg);
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 601px) {
     .features__bg {
         background: url(../img/features-bg.svg);
         background-repeat: no-repeat;

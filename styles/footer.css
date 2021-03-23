@@ -28,7 +28,7 @@
     padding-right: 3%;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 601px) {
     .footer__container {
         padding: 51px 10% 51px 10%;
         flex-direction: row;
@@ -44,9 +44,9 @@
     }
 }
 
-@media screen and (max-width: 700px) and (min-width: 600px) {
+@media screen and (max-width: 768px) and (min-width: 600px) {
     .footer__links {
         flex-wrap: wrap;
-        padding-left: 1%;
+        justify-content: center;
     }
 }
