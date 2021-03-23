@@ -8,6 +8,7 @@
 }
 
 .apps-logo__logos {
+    width: 100%;
     row-gap: 2em;
     column-gap: 2em;
     align-items: center;
