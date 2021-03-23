@@ -1,7 +1,7 @@
 .match__bg {
     background: url(../img/cristiano-ronaldo.svg);
     background-repeat: no-repeat;
-    height: auto;
+    background-size: cover;
     padding-bottom: 40px;
 }
 
@@ -70,6 +70,6 @@
         padding-top: 133px;
     }
     .match {
-        padding-right: 12.5%;
+        padding-right: 10%;
     }
 }
