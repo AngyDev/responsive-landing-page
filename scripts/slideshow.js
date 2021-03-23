@@ -35,7 +35,7 @@ class Slideshow {
 
             var userImg = document.createElement("span");
             userImg.setAttribute("id", "user-img");
-            userImg.innerHTML = '<img src="' + item.image + '"/>';
+            userImg.innerHTML = '<img src="' + item.image + '" alt="Profile image"/>';
             slideUser.appendChild(userImg);
 
             var userName = document.createElement("span");
