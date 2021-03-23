@@ -1,13 +1,19 @@
 .team__img {
-    display: none;
+    background: url(../img/team-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 260px;
+}
+
+.team__text {
+    padding-bottom: 46px;
 }
 
 @media screen and (min-width: 600px) {
     .team__img {
-        display: unset;
-        background: url(../img/team-bg.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
+        order: -1;
+        height: unset;
     }
     .team__text {
         padding: 105px 10% 98px 5%;
