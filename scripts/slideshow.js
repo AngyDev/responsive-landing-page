@@ -13,9 +13,11 @@ class Slideshow {
      */
     async getData() {
         try {
-            const response = await fetch('https://605a21feb11aba001745da26.mockapi.io/api/v1/comments');
-
-            this.usersComments = await response.json();
+            this.usersComments = await fetch('https://605a21feb11aba001745da26.mockapi.io/api/v1/comment').then(response => {
+                if (response.ok) {
+                    return response.json();
+                }
+            });
 
             this.displayData();
             this.displayDot();
