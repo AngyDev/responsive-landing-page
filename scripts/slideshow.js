@@ -13,14 +13,14 @@ class Slideshow {
      */
     async getData() {
         try {
-            this.usersComments = await fetch('https://605a21feb11aba001745da26.mockapi.io/api/v1/comments').then(response => {
-                if (response.status != 200) {
-                    var responseError = 'Something is wrong. Status Code: ' + response.status;
-                    this.displayError(responseError);
-                    return;
-                }
-                return response.json();
-            });
+            const response = await fetch('https://605a21feb11aba001745da26.mockapi.io/api/v1/comment');
+
+            if (response.status != 200) {
+                var responseError = 'Something is wrong! Status Code: ' + response.status;
+                this.displayError(responseError);
+            }
+
+            this.usersComments = await response.json();
 
             if (this.usersComments.length > 0) {
                 this.displayData();
