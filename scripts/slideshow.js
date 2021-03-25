@@ -14,9 +14,12 @@ class Slideshow {
     async getData() {
         try {
             this.usersComments = await fetch('https://605a21feb11aba001745da26.mockapi.io/api/v1/comments').then(response => {
-                if (response.ok) {
-                    return response.json();
+                if (response.status != 200) {
+                    var responseError = 'Something is wrong. Status Code: ' + response.status;
+                    this.displayError(responseError);
+                    return;
                 }
+                return response.json();
             });
 
             this.displayData();
@@ -28,11 +31,23 @@ class Slideshow {
     }
 
     /**
+     * Shows the error on the page
+     * @param {String} error response error string
+     */
+    displayError(error) {
+
+        let div = document.createElement("div");
+        div.innerHTML = error;
+
+        document.getElementById("slideshow-wrapper").appendChild(div);
+    }
+
+    /**
      * Creates and displays users comments section 
      */
     displayData() {
 
-        if (this.usersComments) {
+        if (this.usersComments.length > 0) {
 
             this.usersComments.forEach(item => {
                 var slide = document.createElement("div");
@@ -65,6 +80,11 @@ class Slideshow {
 
                 document.getElementById("slideshow-wrapper").appendChild(slide);
             });
+        } else {
+            let div = document.createElement("div");
+            div.innerHTML = "The response is empty";;
+
+            document.getElementById("slideshow-wrapper").appendChild(div);
         }
     }
 
