@@ -22,8 +22,15 @@ class Slideshow {
                 return response.json();
             });
 
-            this.displayData();
-            this.displayDot();
+            if (this.usersComments.length > 0) {
+                this.displayData();
+                this.displayDot();
+            } else {
+                let div = document.createElement("div");
+                div.innerHTML = "The response is empty";
+
+                document.getElementById("slideshow-wrapper").appendChild(div);
+            }
 
         } catch (error) {
             console.log(error);
@@ -47,62 +54,52 @@ class Slideshow {
      */
     displayData() {
 
-        if (this.usersComments.length > 0) {
+        this.usersComments.forEach(item => {
+            var slide = document.createElement("div");
+            slide.setAttribute("class", "slideshow__slide");
+            var slideUser = document.createElement("div");
+            slideUser.setAttribute("class", "slide__user flex flex-row justify-between align-center");
+            slide.appendChild(slideUser);
 
-            this.usersComments.forEach(item => {
-                var slide = document.createElement("div");
-                slide.setAttribute("class", "slideshow__slide");
-                var slideUser = document.createElement("div");
-                slideUser.setAttribute("class", "slide__user flex flex-row justify-between align-center");
-                slide.appendChild(slideUser);
+            var userImg = document.createElement("span");
+            userImg.setAttribute("id", "user-img");
+            userImg.innerHTML = '<img src="' + item.image + '" alt="Profile image"/>';
+            slideUser.appendChild(userImg);
 
-                var userImg = document.createElement("span");
-                userImg.setAttribute("id", "user-img");
-                userImg.innerHTML = '<img src="' + item.image + '" alt="Profile image"/>';
-                slideUser.appendChild(userImg);
+            var userName = document.createElement("span");
+            userName.setAttribute("id", "user-name");
+            userName.innerHTML = item.name;
+            slideUser.appendChild(userName);
 
-                var userName = document.createElement("span");
-                userName.setAttribute("id", "user-name");
-                userName.innerHTML = item.name;
-                slideUser.appendChild(userName);
+            var twitter = document.createElement("img");
+            twitter.setAttribute("src", "img/twitter.svg");
+            twitter.setAttribute("alt", "Twitter");
+            slideUser.appendChild(twitter);
 
-                var twitter = document.createElement("img");
-                twitter.setAttribute("src", "img/twitter.svg");
-                twitter.setAttribute("alt", "Twitter");
-                slideUser.appendChild(twitter);
+            var slideUserComment = document.createElement("div");
+            slideUserComment.setAttribute("class", "user-comment");
+            slideUserComment.setAttribute("id", "user-commnet");
+            var textComment = document.createTextNode(item.comment);
+            slideUserComment.appendChild(textComment);
+            slide.appendChild(slideUserComment);
 
-                var slideUserComment = document.createElement("div");
-                slideUserComment.setAttribute("class", "user-comment");
-                slideUserComment.setAttribute("id", "user-commnet");
-                var textComment = document.createTextNode(item.comment);
-                slideUserComment.appendChild(textComment);
-                slide.appendChild(slideUserComment);
-
-                document.getElementById("slideshow-wrapper").appendChild(slide);
-            });
-        } else {
-            let div = document.createElement("div");
-            div.innerHTML = "The response is empty";;
-
-            document.getElementById("slideshow-wrapper").appendChild(div);
-        }
+            document.getElementById("slideshow-wrapper").appendChild(slide);
+        });
     }
 
     /**
      * Creates and displays the dots for the slideshow
      */
     displayDot() {
-        if (this.usersComments) {
-            this.usersComments.forEach((item, index) => {
-                var dot = document.createElement("button");
-                dot.setAttribute("name", "dot");
-                dot.setAttribute("class", "dot");
-                dot.setAttribute("aria-label", "Dot Button");
-                dot.setAttribute("id", index + 1);
+        this.usersComments.forEach((item, index) => {
+            var dot = document.createElement("button");
+            dot.setAttribute("name", "dot");
+            dot.setAttribute("class", "dot");
+            dot.setAttribute("aria-label", "Dot Button");
+            dot.setAttribute("id", index + 1);
 
-                document.getElementById("dot-container").appendChild(dot);
-            });
-        }
+            document.getElementById("dot-container").appendChild(dot);
+        });
 
         this.showSlides(this.slideIndex);
     }
