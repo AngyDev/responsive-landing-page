@@ -13,7 +13,7 @@ class Slideshow {
      */
     async getData() {
         try {
-            const response = await fetch('https://605a21feb11aba001745da26.mockapi.io/api/v1/comment');
+            const response = await fetch('https://605a21feb11aba001745da26.mockapi.io/api/v1/comments');
 
             if (response.status != 200) {
                 var responseError = 'Something is wrong! Status Code: ' + response.status;
