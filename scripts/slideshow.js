@@ -13,7 +13,7 @@ class Slideshow {
      */
     async getData() {
         try {
-            const response = await fetch('https://605a21feb11aba001745da26.mockapi.io/api/v1/comments');
+            const response = await fetch('https://e3c711b4-41bb-4b0b-b1b5-944550274dc9.mock.pstmn.io/v1/comments');
 
             if (response.status != 200) {
                 var responseError = 'Something is wrong! Status Code: ' + response.status;
